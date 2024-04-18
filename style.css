@@ -51,11 +51,8 @@ body {
 }
 
 .card main h2 {
-  /* Body S (Bold) */
-  font-family: 'Figtree';
-  font-style: normal;
   font-weight: 800;
-  font-size: 14px;
+  font-size: .9rem;
   line-height: 150%;
   color: var(--black);
 
@@ -67,9 +64,8 @@ body {
 }
 
 .card .card-published-date {
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: .9rem;
   line-height: 150%;
   color: var(--black);
 }
@@ -82,7 +78,7 @@ body {
 
 .card main h1 {
   font-weight: 800;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 150%;
 
   color: var(--black);
@@ -90,10 +86,8 @@ body {
 }
 
 .card main p {
-  font-family: 'Figtree';
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 150%;
 
   color: var(--grey);
@@ -111,9 +105,8 @@ body {
 }
 
 .card footer p {
-  font-style: normal;
   font-weight: 800;
-  font-size: 14px;
+  font-size: .9rem;
   line-height: 150%;
   color: var(--black);
 }
