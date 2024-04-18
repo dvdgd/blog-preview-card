@@ -1,0 +1,130 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --grey: hsl(0, 0%, 50%);
+  --pure-white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: "Figtree";
+  src:     url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype'), 
+  url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype'), 
+  url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype'),
+  url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+}
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+}
+
+body {
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--pure-white);
+  padding: 24px;
+  margin: 0 24px;
+  max-width: 336px;
+  max-height: 474px;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px #000000;
+  border-radius: 24px;
+  transition: box-shadow .3s ease;
+}
+
+.card header img {
+  border-radius: 10px;
+  display: block;
+  max-width: 100%;
+}
+
+.card main h2 {
+  /* Body S (Bold) */
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--black);
+
+  background-color: var(--yellow);
+  display: inline-flex;
+  align-self: self-start;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.card .card-published-date {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--black);
+}
+
+.card main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card main h1 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 150%;
+
+  color: var(--black);
+  transition: color .3s ease;
+}
+
+.card main p {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--grey);
+}
+
+.card footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card footer img {
+  width: 32px;
+  height: 32px;
+}
+
+.card footer p {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--black);
+}
+
+.card:hover main > h1 {
+  color: var(--yellow);
+  transition: color .3s ease;
+}
+
+.card:hover {
+  border: 1px solid #111111;
+  box-shadow: 16px 16px 0px #000000;
+  transition: box-shadow .3s ease;
+}
