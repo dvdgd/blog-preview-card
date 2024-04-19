@@ -13,18 +13,40 @@
   url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
 }
 
-body, h1, h2, p {
+* {
   margin: 0;
   padding: 0;
-  font-family: "Figtree", sans-serif;
 }
 
 body {
+  font-family: "Figtree", sans-serif;
   background-color: var(--yellow);
+
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+}
+
+body main {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+body > footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100svh;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 16px;
+  gap: 0.25rem;
+}
+
+body > footer span {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .card {
