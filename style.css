@@ -50,7 +50,7 @@ body {
   max-width: 100%;
 }
 
-.card main h2 {
+.card div h2 {
   font-weight: 800;
   font-size: .9rem;
   line-height: 150%;
@@ -70,13 +70,13 @@ body {
   color: var(--black);
 }
 
-.card main {
+.card div {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.card main h1 {
+.card div h1 {
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 150%;
@@ -85,7 +85,7 @@ body {
   transition: color .3s ease;
 }
 
-.card main p {
+.card div p {
   font-weight: 500;
   font-size: 1rem;
   line-height: 150%;
