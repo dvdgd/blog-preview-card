@@ -111,7 +111,7 @@ body {
   color: var(--black);
 }
 
-.card:hover main > h1 {
+.card:hover div > h1 {
   color: var(--yellow);
   transition: color .3s ease;
 }
